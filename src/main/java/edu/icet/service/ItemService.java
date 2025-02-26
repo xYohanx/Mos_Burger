@@ -10,6 +10,5 @@ public interface ItemService {
 
     List<Items> getAll();
 
-    List<Items> deleteByItemCode(String itemCode);
 }
 

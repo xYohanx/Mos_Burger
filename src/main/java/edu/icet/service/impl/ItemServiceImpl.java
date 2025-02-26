@@ -34,16 +34,4 @@ public class ItemServiceImpl implements ItemService {
         return itemsList;
 
     }
-
-    @Override
-    public List<Items> deleteByItemCode(String itemCode) {
-        List<Items> itemsList = new ArrayList<>();
-        List<ItemsEntity> byItemCode = itemRepository.deleteByItemCode(itemCode);
-
-       byItemCode.forEach(itemsEntity ->
-               itemsList.add(mapper.map(itemsEntity , Items.class))
-       );
-
-        return itemsList;
-    }
 }

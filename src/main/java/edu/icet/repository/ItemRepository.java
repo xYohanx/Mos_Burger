@@ -7,6 +7,5 @@ import java.util.List;
 
 public interface ItemRepository extends JpaRepository<ItemsEntity,Integer> {
 
-    List<ItemsEntity> deleteByItemCode(String itemCode);
 
 }

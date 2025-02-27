@@ -18,6 +18,7 @@ public class Order {
     private Integer quantity;
     private String address;
     private String date;
+    private String time;
 
 
 }

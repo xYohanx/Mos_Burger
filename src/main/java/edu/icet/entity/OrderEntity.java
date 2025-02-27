@@ -13,7 +13,7 @@ import lombok.ToString;
 @AllArgsConstructor
 @ToString
 @Entity
-@Table(name = "PlaceOrder")
+@Table(name = "Orders")
 public class OrderEntity {
     @Id
     private String orderId;
@@ -24,5 +24,8 @@ public class OrderEntity {
     private Integer quantity;
     private String address;
     private String date;
+    private String time;
+
+
 
 }
